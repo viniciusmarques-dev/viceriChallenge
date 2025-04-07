@@ -1,0 +1,14 @@
+<div class="tasks-container">
+  <h2>Minhas Tarefas</h2>
+  <form (submit)="addTask(); $event.preventDefault()">
+    <input [(ngModel)]="newTask" name="task" placeholder="Nova tarefa" />
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <ul>
+    <li *ngFor="let task of tasks">
+      {{ task.description }}
+      <button (click)="deleteTask(task.id)">🗑</button>
+    </li>
+  </ul>
+</div>
