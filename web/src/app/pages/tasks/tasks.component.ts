@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../../services/task.service';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-tasks',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })

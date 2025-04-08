@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth.service'; 
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
+  name = '';
   email = '';
   password = '';
   error = '';
@@ -20,7 +25,7 @@ export class RegisterComponent {
       return;
     }
 
-    this.authService.register(this.email, this.password).subscribe({
+    this.authService.register(this.name, this.email, this.password).subscribe({
       next: () => {
         this.router.navigate(['/login']);
       },

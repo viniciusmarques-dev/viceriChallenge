@@ -1,0 +1,72 @@
+.register-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .register-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-container input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .register-container input:focus {
+    outline: none;
+    border-color: #3f51b5;
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.3);
+  }
+  
+  .register-container button {
+    padding: 12px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-container button:hover {
+    background-color: #303f9f;
+  }
+  
+  .register-container .error {
+    color: #d32f2f;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .register-container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .register-container a {
+    color: #3f51b5;
+    text-decoration: none;
+  }
+  
+  .register-container a:hover {
+    text-decoration: underline;
+  }
+  

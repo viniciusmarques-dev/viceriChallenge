@@ -1,10 +1,11 @@
 <div class="register-container">
   <h2>Cadastro</h2>
-  <form (submit)="register(); $event.preventDefault()">
-    <input [(ngModel)]="email" name="email" placeholder="Email" type="email" />
-    <input [(ngModel)]="password" name="password" placeholder="Senha" type="password" />
+  <form (ngSubmit)="register()">
+    <input [(ngModel)]="name" name="name" placeholder="Nome" type="text" required />
+    <input [(ngModel)]="email" name="email" placeholder="Email" type="email" required />
+    <input [(ngModel)]="password" name="password" placeholder="Senha" type="password" required />
     <button type="submit">Cadastrar</button>
   </form>
   <p *ngIf="error" class="error">{{ error }}</p>
-  <p>Já tem conta? <a routerLink="/login">Entrar</a></p>
+  <p>Já tem conta? <a href="/login">Entrar</a></p>
 </div>
