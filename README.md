@@ -10,13 +10,14 @@ Aplicação full stack de gerenciamento de tarefas (TO-DO) com cadastro, login e
 - Angular Router
 - CSS
 
+---
+
 ### Back-end (Node.js)
 - Node.js
 - Express
 - Prisma ORM
 - SQLite
 
-369597737
 ---
 
 ## 🛠️ Requisitos
