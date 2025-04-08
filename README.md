@@ -36,20 +36,22 @@ Aplicação full stack de gerenciamento de tarefas (TO-DO) com cadastro, login e
 ```bash
 git clone https://github.com/viniciusmarques-dev/viceriChallenge
 cd viceriChallenge
-````
+```
 
 ### 2. Instalando as dependências do backend
-bash
+```bash
 cd server
 npm install
 npx prisma migrate dev --first-migrate init
 npx prisma generate
 npm run dev
+```
 
 ### 2. Instalando as dependências do frontend
+```bash
 npm install
 ng serve
-
+```
 
 
 
