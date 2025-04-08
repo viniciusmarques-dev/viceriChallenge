@@ -6,7 +6,6 @@ import taskRoutes from './routes/taskRoutes';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
 import { swaggerOptions } from './docs/swagger';
-
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 
 dotenv.config();
@@ -19,7 +18,7 @@ app.use('/tasks', taskRoutes);
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.get('/', (req, res) => {
-  res.send('API TO-DO funcionando!');
+  res.send('API funcional!');
 });
 
 const PORT = process.env.PORT || 3000;

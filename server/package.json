@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.5.0",
+    "@types/node": "^22.14.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -20,6 +21,7 @@
     "prisma": "^6.5.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
