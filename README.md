@@ -1,4 +1,4 @@
-# 📋 Viceri Seidor TO-DO Challenge
+# 📋TO-DO List
 
 Aplicação full stack de gerenciamento de tarefas (TO-DO) com cadastro, login e gerenciamento de tarefas por usuário.
 
